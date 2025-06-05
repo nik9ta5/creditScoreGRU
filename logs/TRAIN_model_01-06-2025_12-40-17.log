@@ -1,0 +1,193 @@
+2025-06-01 12:40:17,196 - INFO - 
+TRAIN - 01-06-2025_12-40-17
+RANDOM_STATE = 42
+DEVICE = cuda
+
+VALIDATION_SIZE = 0.1
+SUB_TRAIN_SIZE = 0.5
+
+BATCH_SIZE_TRAIN = 256
+BATCH_SIZE_VAL = 256
+EPOCHS = 2
+LR = 0.001
+L2 = 1e-05
+
+BIDERECTIONAL = False
+
+HIDDEN_SIZE = 512
+NUM_LAYERS_GRU = 3
+
+VALIDATION_STEPS = 1000
+
+FEATURES_FOR_DELETE = ['enc_col_5', 'enc_col_20', 'enc_col_21', 'enc_col_22', 'enc_col_24', 'enc_col_41', 'enc_col_43', 'enc_col_44', 'enc_col_47', 'enc_col_48', 'enc_col_7', 'enc_col_10', 'enc_col_13', 'enc_col_16', 'enc_col_19', 'enc_col_36', 'enc_col_39']
+
+2025-06-01 12:40:22,651 - INFO - FEATURE_NUM = 40
+2025-06-01 12:40:24,469 - INFO - 
+    shape uniq clients:         (3000000, 3)
+    shape train dataset:        (11769426, 42)
+    shape val dataset:          (2621882, 42)
+    shape sub train dataset:    (1350000, 3)
+    
+    cnt ids for train:          1350000
+    cnt ids for val:            300000                        
+    
+2025-06-01 12:40:25,281 - INFO - 
+ ----- Embeddings ----- 
+
+2025-06-01 12:40:25,411 - INFO - TRAIN: enc_col_0 - [1 0]
+TEST: enc_col_0 - [1 0]
+2025-06-01 12:40:25,512 - INFO - TRAIN: enc_col_1 - [4 3 2 7 5 1 0 6]
+TEST: enc_col_1 - [4 0 5 3 2 6 7 1]
+2025-06-01 12:40:25,614 - INFO - TRAIN: enc_col_2 - [1 0]
+TEST: enc_col_2 - [1 0]
+2025-06-01 12:40:25,720 - INFO - TRAIN: enc_col_3 - [ 6  0  5  3  2  7 16  1 13  8  9 11 10]
+TEST: enc_col_3 - [ 6  3  5  0 16  2  8  1  7 13 11  9 14 10 15  4 17]
+2025-06-01 12:40:25,822 - INFO - TRAIN: enc_col_4 - [1 4 3 6 5 2 0]
+TEST: enc_col_4 - [1 6 4 3 5 2 0]
+2025-06-01 12:40:25,924 - INFO - TRAIN: enc_col_6 - [1 0]
+TEST: enc_col_6 - [1 0]
+2025-06-01 12:40:26,025 - INFO - TRAIN: enc_col_8 - [1 0]
+TEST: enc_col_8 - [1 0]
+2025-06-01 12:40:26,127 - INFO - TRAIN: enc_col_9 - [4 1 2 3]
+TEST: enc_col_9 - [4 2 1 3]
+2025-06-01 12:40:26,230 - INFO - TRAIN: enc_col_11 - [13  3 11 10  5  0  8  6  4  2  9  1 12 14  7 15]
+TEST: enc_col_11 - [11  9 12  3 15  7  0  4  6 14  8  1 10  5 13  2]
+2025-06-01 12:40:26,331 - INFO - TRAIN: enc_col_12 - [0 1]
+TEST: enc_col_12 - [0 1]
+2025-06-01 12:40:26,432 - INFO - TRAIN: enc_col_14 - [1 0]
+TEST: enc_col_14 - [1 0]
+2025-06-01 12:40:26,534 - INFO - TRAIN: enc_col_15 - [1 0]
+TEST: enc_col_15 - [1 0]
+2025-06-01 12:40:26,635 - INFO - TRAIN: enc_col_17 - [16 13  6 18  0  3  2 12  4 14 15 11 10  1  7 19  5  9 17  8]
+TEST: enc_col_17 - [16 13 18  6  0  3 12  2 15  4  7 19 14  1 10  5 11  9  8 17]
+2025-06-01 12:40:26,739 - INFO - TRAIN: enc_col_18 - [0 3 1 2]
+TEST: enc_col_18 - [0 2 1 3]
+2025-06-01 12:40:26,841 - INFO - TRAIN: enc_col_23 - [3 0 1 2]
+TEST: enc_col_23 - [0 3 1 2]
+2025-06-01 12:40:26,942 - INFO - TRAIN: enc_col_25 - [ 8 14 13  2 19 10  3]
+TEST: enc_col_25 - [ 8 14 13  2 19  3 10  1 18 11  4]
+2025-06-01 12:40:27,043 - INFO - TRAIN: enc_col_26 - [1 0]
+TEST: enc_col_26 - [1 0]
+2025-06-01 12:40:27,144 - INFO - TRAIN: enc_col_27 - [2 3 1 0]
+TEST: enc_col_27 - [2 1 3]
+2025-06-01 12:40:27,246 - INFO - TRAIN: enc_col_28 - [ 4 13 11  0  5  3  2  7  8  9 10  1  6 12]
+TEST: enc_col_28 - [ 2  8  4  5  0  7  9  1  6 11  3 13 10 12]
+2025-06-01 12:40:27,347 - INFO - TRAIN: enc_col_29 - [0 1]
+TEST: enc_col_29 - [0 1]
+2025-06-01 12:40:27,448 - INFO - TRAIN: enc_col_30 - [3 5 1 4 2]
+TEST: enc_col_30 - [3 2 1 5 4]
+2025-06-01 12:40:27,549 - INFO - TRAIN: enc_col_31 - [1 2 0 3]
+TEST: enc_col_31 - [1 2 0 3]
+2025-06-01 12:40:27,650 - INFO - TRAIN: enc_col_32 - [3 2 1 4 5 0 6]
+TEST: enc_col_32 - [3 2 4 5 1 6 0]
+2025-06-01 12:40:27,753 - INFO - TRAIN: enc_col_33 - [17  4  3  0 11  5 15  9 16 14 18 19 12  1  2 13 10  8  6  7]
+TEST: enc_col_33 - [17  0  3 15  4  2 10 11  6  1 16  9  7  8 14 19  5 13 12 18]
+2025-06-01 12:40:27,854 - INFO - TRAIN: enc_col_34 - [3 0 1 2]
+TEST: enc_col_34 - [3 0 1 2]
+2025-06-01 12:40:27,955 - INFO - TRAIN: enc_col_35 - [4 1 2 3 0]
+TEST: enc_col_35 - [4 1 2 3 5 0]
+2025-06-01 12:40:28,056 - INFO - TRAIN: enc_col_37 - [ 0  9 11  2  1 15 16 13  8 14  6  4  3  5 10 12  7]
+TEST: enc_col_37 - [ 9 16 13  1 14  8  7  4  6  3 12  5 10  0 15 11  2]
+2025-06-01 12:40:28,157 - INFO - TRAIN: enc_col_38 - [1 0]
+TEST: enc_col_38 - [0 1]
+2025-06-01 12:40:28,258 - INFO - TRAIN: enc_col_40 - [2 0 4 5 3 6 1]
+TEST: enc_col_40 - [4 1 2 6 5 0 3 7]
+2025-06-01 12:40:28,360 - INFO - TRAIN: enc_col_42 - [3 0 1 2]
+TEST: enc_col_42 - [0 3 2 1]
+2025-06-01 12:40:28,461 - INFO - TRAIN: enc_col_45 - [ 2  5  6  3 17  1 16  9 13  8 10  0 11 18 19 12 14 15  7  4]
+TEST: enc_col_45 - [ 2  5 16  9  7 17 10  8 15 18  6  0  3 14 13 11  4 19 12  1]
+2025-06-01 12:40:28,562 - INFO - TRAIN: enc_col_46 - [16  9  2 18 11 15  3  7  5  8 19  4 12 13  6  0 10  1 14 17]
+TEST: enc_col_46 - [16 15  2  1  4  9  8 13 11  5  6  7  3 17 12 18 19  0 10 14]
+2025-06-01 12:40:28,663 - INFO - TRAIN: enc_col_49 - [3 0 1 2]
+TEST: enc_col_49 - [3 1 0 2]
+2025-06-01 12:40:28,764 - INFO - TRAIN: enc_col_50 - [ 7 15  8 16  4  2  3 17 14  1  9 11  6 10 13  0 12  5]
+TEST: enc_col_50 - [17 15  8  9 14  6  7  4 16 12  3  2  1 11  0 13 10  5]
+2025-06-01 12:40:28,866 - INFO - TRAIN: enc_col_51 - [11  9  8 10  5 15 14  7  0  1 13 16  2  6 12  3  4]
+TEST: enc_col_51 - [14  9  5  0  7  8  6 15  1 10  3 13 11 12  2 16  4]
+2025-06-01 12:40:28,967 - INFO - TRAIN: enc_col_52 - [3 0 1 2]
+TEST: enc_col_52 - [0 3 2 1]
+2025-06-01 12:40:29,068 - INFO - TRAIN: enc_col_53 - [0 3 1 2]
+TEST: enc_col_53 - [0 1 3 2]
+2025-06-01 12:40:29,169 - INFO - TRAIN: enc_col_54 - [5 8 2 7 9 1 4 6 0 3]
+TEST: enc_col_54 - [5 8 2 9 7 6 1 3 0]
+2025-06-01 12:40:29,271 - INFO - TRAIN: enc_col_55 - [0 3 1 2]
+TEST: enc_col_55 - [0 1 3 2]
+2025-06-01 12:40:29,372 - INFO - TRAIN: enc_col_56 - [19 16 10 14  7  1  3  2  8  0 18 15 17  5 11  6  4 13  9 12]
+TEST: enc_col_56 - [ 3 16  5  1  2 11 15  9 17  8 10 14  6 18 12 13 19  0  7  4]
+2025-06-01 12:40:30,039 - INFO - 
+continue: ./models/train_model_31-05-2025_19-34-26/training_31-05-2025_22-01-59_epoch_0_4999/model_roc_0.76.pt
+SCHEDUTER: DELETE
+CHANGE: LR: 0.001 -> 0.001, BATCH_SIZE: 256 -> 256, VALID_STEP: 1000 -> 1000
+model:
+GRUModel(
+  (embedding): ModuleList(
+    (0): Embedding(2, 2, padding_idx=0)
+    (1): Embedding(8, 5, padding_idx=0)
+    (2): Embedding(2, 2, padding_idx=0)
+    (3): Embedding(18, 8, padding_idx=0)
+    (4): Embedding(7, 5, padding_idx=0)
+    (5-6): 2 x Embedding(2, 2, padding_idx=0)
+    (7): Embedding(5, 4, padding_idx=0)
+    (8): Embedding(16, 8, padding_idx=0)
+    (9-11): 3 x Embedding(2, 2, padding_idx=0)
+    (12): Embedding(20, 9, padding_idx=0)
+    (13-14): 2 x Embedding(4, 3, padding_idx=0)
+    (15): Embedding(20, 9, padding_idx=0)
+    (16): Embedding(2, 2, padding_idx=0)
+    (17): Embedding(4, 3, padding_idx=0)
+    (18): Embedding(14, 7, padding_idx=0)
+    (19): Embedding(2, 2, padding_idx=0)
+    (20): Embedding(6, 4, padding_idx=0)
+    (21): Embedding(4, 3, padding_idx=0)
+    (22): Embedding(7, 5, padding_idx=0)
+    (23): Embedding(20, 9, padding_idx=0)
+    (24): Embedding(4, 3, padding_idx=0)
+    (25): Embedding(6, 4, padding_idx=0)
+    (26): Embedding(17, 8, padding_idx=0)
+    (27): Embedding(2, 2, padding_idx=0)
+    (28): Embedding(8, 5, padding_idx=0)
+    (29): Embedding(4, 3, padding_idx=0)
+    (30-31): 2 x Embedding(20, 9, padding_idx=0)
+    (32): Embedding(4, 3, padding_idx=0)
+    (33): Embedding(18, 8, padding_idx=0)
+    (34): Embedding(17, 8, padding_idx=0)
+    (35-36): 2 x Embedding(4, 3, padding_idx=0)
+    (37): Embedding(10, 6, padding_idx=0)
+    (38): Embedding(4, 3, padding_idx=0)
+    (39): Embedding(20, 9, padding_idx=0)
+  )
+  (gru): GRU(189, 512, num_layers=3, batch_first=True)
+  (fc): Linear(in_features=512, out_features=256, bias=True)
+  (bn1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (dropout): Dropout(p=0.05, inplace=False)
+  (relu): ReLU()
+  (fc2): Linear(in_features=256, out_features=128, bias=True)
+  (bn2): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (dropout2): Dropout(p=0.05, inplace=False)
+  (fc_out): Linear(in_features=128, out_features=1, bias=True)
+)
+
+2025-06-01 12:40:30,039 - INFO - 
+---------- Training ----------
+
+2025-06-01 12:40:30,039 - INFO - path2dir_save_models: ./models/train_model_01-06-2025_12-40-17
+2025-06-01 13:09:33,627 - INFO - epoch: 0. Trainig loss: 1.2262845039367676. MAX-ROC: 0. ROC-AUC: 0.7636889189394236
+2025-06-01 13:09:33,639 - INFO - model with ROC: 0.7636889189394236 SAVE PATH: ./models/train_model_01-06-2025_12-40-17/training_01-06-2025_13-09-33_epoch_0_999/model_roc_0.76.pt
+2025-06-01 13:38:41,703 - INFO - epoch: 0. Trainig loss: 1.0077046155929565. MAX-ROC: 0.7636889189394236. ROC-AUC: 0.7644739344813821
+2025-06-01 13:38:41,719 - INFO - model with ROC: 0.7644739344813821 SAVE PATH: ./models/train_model_01-06-2025_12-40-17/training_01-06-2025_13-38-41_epoch_0_1999/model_roc_0.76.pt
+2025-06-01 14:08:01,121 - INFO - epoch: 0. Trainig loss: 1.1681784391403198. MAX-ROC: 0.7644739344813821. ROC-AUC: 0.7622578560909918
+2025-06-01 14:36:50,934 - INFO - epoch: 0. Trainig loss: 1.3283354043960571. MAX-ROC: 0.7644739344813821. ROC-AUC: 0.765277377700537
+2025-06-01 14:36:50,945 - INFO - model with ROC: 0.765277377700537 SAVE PATH: ./models/train_model_01-06-2025_12-40-17/training_01-06-2025_14-36-50_epoch_0_3999/model_roc_0.77.pt
+2025-06-01 15:05:38,136 - INFO - epoch: 0. Trainig loss: 1.0605933666229248. MAX-ROC: 0.765277377700537. ROC-AUC: 0.7571461470770745
+2025-06-01 15:34:16,136 - INFO - epoch: 1. Trainig loss: 1.2015867233276367. MAX-ROC: 0.765277377700537. ROC-AUC: 0.7635072786121905
+2025-06-01 16:02:12,875 - INFO - epoch: 1. Trainig loss: 1.4488091468811035. MAX-ROC: 0.765277377700537. ROC-AUC: 0.7688647472956818
+2025-06-01 16:02:12,886 - INFO - model with ROC: 0.7688647472956818 SAVE PATH: ./models/train_model_01-06-2025_12-40-17/training_01-06-2025_16-02-12_epoch_1_6999/model_roc_0.77.pt
+2025-06-01 16:31:40,801 - INFO - epoch: 1. Trainig loss: 1.075079083442688. MAX-ROC: 0.7688647472956818. ROC-AUC: 0.7696322983394206
+2025-06-01 16:31:40,820 - INFO - model with ROC: 0.7696322983394206 SAVE PATH: ./models/train_model_01-06-2025_12-40-17/training_01-06-2025_16-31-40_epoch_1_7999/model_roc_0.77.pt
+2025-06-01 17:00:39,716 - INFO - epoch: 1. Trainig loss: 1.2301833629608154. MAX-ROC: 0.7696322983394206. ROC-AUC: 0.7657903113347191
+2025-06-01 17:30:17,027 - INFO - epoch: 1. Trainig loss: 1.2505296468734741. MAX-ROC: 0.7696322983394206. ROC-AUC: 0.7696421429604077
+2025-06-01 17:30:17,039 - INFO - model with ROC: 0.7696421429604077 SAVE PATH: ./models/train_model_01-06-2025_12-40-17/training_01-06-2025_17-30-17_epoch_1_9999/model_roc_0.77.pt
+2025-06-01 17:44:18,258 - INFO - ------------- Result Train -------------
+2025-06-01 17:44:18,258 - INFO - trainig loss: 1.259189248085022
+2025-06-01 17:47:58,385 - INFO - FINAL ROC: 0.7699404084657585
+2025-06-01 17:47:58,396 - INFO - model with ROC: 0.7699404084657585 SAVE PATH: ./models/train_model_01-06-2025_12-40-17/training_01-06-2025_17-47-58_final_10548/model_roc_0.77.pt
