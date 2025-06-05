@@ -7,10 +7,10 @@ test_target.csv
 train_target.csv
 
 #Исключение
-!models/train_31-05-2025_00-33-44_batch_5999_roc_0.750/
-!models/training_31-05-2025_22-01-59_epoch_0_4999/
-!models/training_01-06-2025_17-30-17_epoch_1_9999/
-!models/training_01-06-2025_23-22-35_final_10548/
+!models/train_31-05-2025_00-33-44_batch_5999_roc_0.750/model_roc_0.750.pt
+!models/training_31-05-2025_22-01-59_epoch_0_4999/model_roc_0.76.pt
+!models/training_01-06-2025_17-30-17_epoch_1_9999/model_roc_0.77.pt
+!models/training_01-06-2025_23-22-35_final_10548/model_roc_0.77.pt
 
 !logs/TRAIN_model_31-05-2025_19-34-26.log
 !logs/TRAIN_model_01-06-2025_12-40-17.log
